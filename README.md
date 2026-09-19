@@ -16,7 +16,18 @@ The tested device was a Fusion-io ioDrive Duo 640 GB, presented to Windows as tw
 
 `Dell_IO_Management_3.2.15.1699_x64.exe`
 
-The installer is proprietary vendor software and is not included here. Do not upload it to GitHub or Box unless you have explicit redistribution permission from the rights holder. For a copy obtained through an authorized source, verify:
+### Driver attribution and download
+
+The installer and driver are property of **Dell** (the package bundles Fusion-io/SanDisk VSL technology), licensed to end users by Dell under Dell's terms. This repository does not host the binary and does not claim any ownership over it.
+
+Download the package from Dell Support, where the current version may differ from the version tested here:
+
+- Dell Drivers & Downloads: https://www.dell.com/support/drivers
+- Dell ioMemory / IO Management driver and firmware pages: https://www.dell.com/support (search the specific system or part)
+
+Dell archives some OEM packages under a service tag or part number, so search by the originating system or by `Dell_IO_Management` if the legacy package has been superseded.
+
+This package is not redistributed here. To ensure a downloaded copy is genuine, verify it against the checksums below:
 
 ```text
 SHA-256  2BDE91034953629155B820605EC082BD42C172204F181FC49DF38792E3E16968
@@ -29,7 +40,7 @@ On Windows, calculate the checksum with:
 Get-FileHash .\\Dell_IO_Management_3.2.15.1699_x64.exe -Algorithm SHA256
 ```
 
-The installed VSL driver reported version `3.2.15`, build `1699`, and the provider was SanDisk. This is legacy software. Obtain it from a reputable archive or the hardware vendor's support materials, verify its digital signature, and scan downloads before use. Do not redistribute proprietary installer binaries in this repository.
+The installed VSL driver reported version `3.2.15`, build `1699`, and the provider was SanDisk. This is legacy software. See the attribution section above for where to obtain it and how to verify it.
 
 ## Installation sequence
 
